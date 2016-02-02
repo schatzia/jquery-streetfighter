@@ -1,6 +1,10 @@
 body{
 	background-color: black;
 }
+@font-face {
+    font-family: ryuFont;
+    src: url('../fonts/KOMIKAX_.ttf');
+}
 .main{
 	background-color: white;
 	margin-top: 110px;
@@ -10,10 +14,29 @@ body{
 	position: relative;
 	z-index: 1;
 }
+.instructions{
+	font-family: ryuFont;
+	font-size: 28px;
+	color: black;
+	text-align: center;
+	display: block;
+	position: absolute;
+	left: 800px;
+	width: 600px;
+	z-index: -9999;
+}
+.instructions p {
+	width: 50%;
+	line-height: 45px;
+}
+.instructions p + p {
+	margin-left: 275px;
+}
 .ryu{
 	float: left;
 	width: 659px;
 	height: 494px;
+	display: inline-block;
 }
 .ryu-ready, .ryu-still, .ryu-throwing{
 	width: 659px;
