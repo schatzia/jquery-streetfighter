@@ -69,7 +69,7 @@ body{
 	display: none;
 }
 .jquery-logo{
-	background-image: url('../images/jQuery_logo.svg');
+	background-image: url('../images/jquery_logo.png');
 	background-size: contain;
 	background-repeat: no-repeat;
 	width: 600px;
