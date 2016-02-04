@@ -8,22 +8,14 @@ body{
 .main{
 	background-color: white;
 	margin-top: 110px;
-	padding-left: 100px;
+	padding-left: 80px;
 	min-width: 1200px;
 	height: 500px;
 	position: relative;
-	z-index: 1;
 }
 .instructions{
-	font-family: ryuFont;
 	font-size: 28px;
 	color: black;
-	text-align: center;
-	display: block;
-	position: absolute;
-	left: 800px;
-	width: 600px;
-	z-index: -9999;
 }
 .instructions p {
 	width: 50%;
@@ -67,4 +59,40 @@ body{
 	z-index: 10;
 	left: 628px;
 	top: 171px;
+}
+.sf-logo{
+	background-image: url('../images/SF_logo.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 620px;
+	height: 354px;
+	display: none;
+}
+.jquery-logo{
+	background-image: url('../images/jQuery_logo.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 600px;
+	height: 300px;
+	display: none;
+	margin-top: 60px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.brought-by{
+	color: red;
+	font-size: 60px;
+	margin-top: 30px;
+}
+.text-content{
+	position: absolute;
+	left: 620px;
+	height: 425px;
+	width: 600px;
+	padding-top: 75px;
+}
+.instructions, .brought-by{
+	display: none;
+	text-align: center;
+	font-family: ryuFont;
 }

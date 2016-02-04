@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	playIntro();
 	$('.ryu').mouseenter(function() {
 		$('.ryu-still').hide();
 		$('.ryu-ready').show();
@@ -61,4 +62,21 @@ function pauseCoolSound() {
 	$('#cool-sound')[0].pause();
 	$('#cool-sound')[0].load();
 	/* $('#cool-sound')[0].currentTime = 0; */
+}
+function playIntro(){
+	$('#streetfighter-theme')[0].volume = 0.3;
+	$('#streetfighter-theme')[0].play();
+	$('.sf-logo').fadeIn(3500, function(){
+		$(this).fadeOut(1000, function(){
+			$('.brought-by').fadeIn(2500, function(){
+				$(this).fadeOut(1000, function(){
+					$('.jquery-logo').fadeIn(2500, function(){
+						$(this).fadeOut(1500, function(){
+							$('.instructions').fadeIn(2000);
+						});
+					});
+				});
+			});
+		});
+	});
 }
